@@ -5,7 +5,7 @@
 ---
 
 ## 📺 Live Demo  
-![FinScope3D Preview](src/FinScope3D.mov)
+[![Watch demo](src/FinScope3D.png)](https://drive.google.com/file/d/1ua_CjsZJFX0CzS_Aortgt-NMUekr0hUb/view?usp=sharing)
 
 ## 🌒 Preview (Dark Mode)
 
