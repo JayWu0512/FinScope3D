@@ -4,10 +4,13 @@
 
 ---
 
-## 📺 Live Demo (Click here to watch the demo on Google Drive) 
+## 📺 Live Demo (Click here to watch the demo on Google Drive)
+
 [![Watch demo](src/FinScope3D.png)](https://drive.google.com/file/d/1ua_CjsZJFX0CzS_Aortgt-NMUekr0hUb/view?usp=sharing)
 
-## 🌒 Preview 
+---
+
+## 🌒 Preview
 
 ![FinScope3D Preview](src/FinScope3D.png)
 
@@ -32,7 +35,8 @@ The system is divided into four major components:
    Handles database queries and structured analysis using:
    - SQLite  
    - OpenAI for semantic understanding  
-   - ChromaDB for vector search
+   - ChromaDB for vector search  
+   - **Neo4j for graph-based entity linking**
 
 3. **📚 Unstructured Data**  
    Retrieves insights from financial transcripts and news using:
@@ -54,8 +58,9 @@ The system is divided into four major components:
 - **NER**: Hugging Face Transformers
 - **Intent Classification**: Custom LLM Agent
 - **Vector Store**: ChromaDB
+- **Graph Database**: Neo4j
 - **Unstructured Query**: LangChain + OpenAI
-- **Structured Query**: SQLite + OpenAI
+- **Structured Query**: SQLite + OpenAI + Neo4j
 - **Prediction Models**: LightGBM, Optuna
 - **Frontend**: Gradio
 
@@ -65,9 +70,27 @@ The system is divided into four major components:
 
 - 🔎 Intelligent financial entity extraction  
 - 🧭 Intent-aware question routing  
+- 🧠 Graph-based entity relationship reasoning with Neo4j  
 - 📊 ML-based financial predictions  
 - 💬 Multilingual input/output  
 - ⚡ Fast response via lightweight backend  
+
+---
+
+## 📂 Data Access
+
+Due to GitHub’s file size limitations, large ChromaDB database files are stored externally on Google Drive.
+
+Please download the following folders and place them in the appropriate paths within the project structure:
+
+- 🏛️ **Structured ChromaDB**  
+  📁 [`Structured_Data/chroma_db`](https://drive.google.com/drive/folders/1uWigilOWapPTSHiSiLOQDppN-RQQUyOu?usp=drive_link)
+
+- 📰 **Unstructured ChromaDB**  
+  📁 [`Unstructured_Data/chroma_db`](https://drive.google.com/drive/folders/1QVCrxMwzFuyMUlW64S9sSkjZG2i3lmyB?usp=drive_link)
+
+⚠️ These folders are required for vector-based retrieval and predictive tasks.  
+Make sure to place them in the exact matching directories for the system to function properly:
 
 ---
 
