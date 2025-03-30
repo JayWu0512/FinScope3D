@@ -36,7 +36,7 @@ The system is divided into four major components:
    - SQLite  
    - OpenAI for semantic understanding  
    - ChromaDB for vector search  
-   - **Neo4j for graph-based entity linking**
+   - Neo4j for graph-based entity linking
 
 3. **📚 Unstructured Data**  
    Retrieves insights from financial transcripts and news using:
@@ -89,7 +89,7 @@ Please download the following folders and place them in the appropriate paths wi
 - 📰 **Unstructured ChromaDB**  
   📁 [`Unstructured_Data/chroma_db`](https://drive.google.com/drive/folders/1QVCrxMwzFuyMUlW64S9sSkjZG2i3lmyB?usp=drive_link)
 
-⚠️ These folders are required for vector-based retrieval and predictive tasks.  
+⚠️ These folders are required for vector-based retrieval.  
 Make sure to place them in the exact matching directories for the system to function properly:
 
 ---
