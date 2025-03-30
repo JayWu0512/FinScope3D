@@ -36,13 +36,13 @@ The system is divided into four major components:
    - SQLite  
    - OpenAI for semantic understanding  
    - ChromaDB for vector search  
-   - Neo4j for graph-based entity linking
 
 3. **📚 Unstructured Data**  
    Retrieves insights from financial transcripts and news using:
    - LangChain  
    - ChromaDB  
-   - OpenAI  
+   - OpenAI
+   - Neo4j for graph-based entity linking  
 
 4. **📈 Prediction Module**  
    Performs data-driven financial prediction tasks using:
@@ -55,12 +55,12 @@ The system is divided into four major components:
 ## 🧰 Tech Stack
 
 - **LLMs**: OpenAI, Hugging Face
-- **NER**: Hugging Face Transformers
-- **Intent Classification**: Custom LLM Agent
+- **NER**: Hugging Face Transformers(flair/ner-english-ontonetoes-large)
+- **Intent Classification**: Custom LLM Agent(OpenAI)
 - **Vector Store**: ChromaDB
 - **Graph Database**: Neo4j
-- **Unstructured Query**: LangChain + OpenAI
-- **Structured Query**: SQLite + OpenAI + Neo4j
+- **Unstructured Query**: LangChain + OpenAI + Neo4j
+- **Structured Query**: SQLite + OpenAI
 - **Prediction Models**: LightGBM, Optuna
 - **Frontend**: Gradio
 
