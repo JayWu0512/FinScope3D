@@ -18,7 +18,7 @@
 
 ## 🧩 Overview
 
-**FinScope3D** is a multimodal financial QA system that integrates natural language understanding, named entity recognition (NER), structured and unstructured data processing, and predictive modeling to deliver insightful responses to financial queries.
+**FinScope3D** is a multimodal financial QA system that integrates natural language understanding, named entity recognition (NER), structured and unstructured data processing, and predictive machine learning modeling to deliver insightful responses to busienss and financial queries.
 
 ---
 
@@ -28,7 +28,7 @@ The system is divided into four major components:
 
 1. **🧠 NER Module**  
    Extracts key entities like companies, dates, metrics, and events using:
-   - Hugging Face Transformers  
+   - HuggingFace Transformers  
    - Custom rules for financial domain  
 
 2. **🧾 Structured Data**  
@@ -38,7 +38,7 @@ The system is divided into four major components:
    - ChromaDB for vector search  
 
 3. **📚 Unstructured Data**  
-   Retrieves insights from financial transcripts and news using:
+   Retrieves business and financial insights from earnings transcripts and 10-ks using:
    - LangChain  
    - ChromaDB  
    - OpenAI
@@ -54,8 +54,8 @@ The system is divided into four major components:
 
 ## 🧰 Tech Stack
 
-- **LLMs**: OpenAI, Hugging Face
-- **NER**: Hugging Face Transformers(flair/ner-english-ontonetoes-large)
+- **LLMs**: OpenAI, HuggingFace
+- **NER**: HuggingFace Transformers(flair/ner-english-ontonetoes-large)
 - **Intent Classification**: Custom LLM Agent(OpenAI)
 - **Vector Store**: ChromaDB
 - **Graph Database**: Neo4j
